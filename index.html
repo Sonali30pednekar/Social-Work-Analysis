@@ -1,0 +1,305 @@
+
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+ibody{
+    margin:0;
+    min-height: 100%;
+    min-width:100%;
+    
+}
+
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: justify;
+    text-justify: inter-word;
+}
+div {text-align: left;}
+
+.content{
+    margin-left:0;
+    padding : 2% 25% 2% 25%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+<div class="container">
+<div class = "navbar">
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="#Introduction">Introduction</a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >NaiveBayes in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
+        
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+</ul>    
+</div>
+
+
+<div class="content">
+
+<h1><center><b>INTRODUCTION</b></center></h1>
+<p>The topic of this portfolio is analyzing different sectors of social work in the world from a data-driven perspective. </p>
+
+<p> People and communities are empowered through social work. It is a practice-based profession that fosters social change, development, and empowerment. Understanding human growth, behavior, and social, economic, and cultural structures and interconnections is essential for social work practice. Social workers are professionals who try to improve people's overall well-being and to meet their fundamental and complex needs. Social workers work with a wide range of people and populations, with a special concentration on the vulnerable, oppressed, and impoverished.</p>
+
+<p>Currently, the interest in data science has led to the popularity of data-driven research. Thus, it is possible to argue that data science now is a core component of every professional field. Practically speaking, every firm uses data science approaches to manage its data in order to enhance understanding of how to build, share, and deploy new services and products, and ultimately to assist consumers and clients in generating new prospects. Data Science is a research tool that allows the exploration and quantitative analysis of a wide range of available data, both structured and unstructured, in order to develop understanding, extract knowledge, and formulate actionable results. Commonly, data science refers to the connection among different fields, including statistics, engineering, and mathematics, solid knowledge about a specific field, scientific method applications, data exploration, and data analysis. For social work intervention at different practice levels, all of these fields can be an asset and a powerful tool to improve professional performance.</p>
+  <center><img alt="social_work1.jpg" height="400px" src="social_work1.jpg" width="600px" /></center>   
+<p>Beyond typical statistical analysis, data science can strengthen social work scientific understanding by using novel techniques to quantitative data. Real-world scenario analysis is the center of data science, which incorporates adaptable frameworks and theoretical approaches. As a result, a number of standard schemas can aid in visualizing how data science techniques and technology apply to social work practice, as well as communicating intervention outcomes and making predictions.Data science can be a part of an innovative set of tools and strategies to improve social work practice to achieve intervention goals applying a time sensitive and scientific approach in order to increase the pace of action to reinforce evaluation.</p>
+
+
+
+    
+    
+<p>However, it is possible to identify social work as an art as well, due to the dynamic reality that practitioners face every day. Thus, data science can be a complementary set of tools to merge the art of social work with the ability to accomplish scientific evidence to enhance people's well-being.As a social worker, they get to learn the theoretical and practical sense about human behavior and relationships.The connection that many people miss is that data science is also about human behavior and relationships. In data science, we analyze online behaviors to better understand consumers. For example, Spotify monitors and analyses what you listen to so that they can recommend new artists. The difference is in the goal. Social work aims to help improve lives and data science aims to help improve businesses. But, can data science also improve lives?</p>
+
+&emsp;
+&emsp;
+&ensp;
+<center><img alt="social_work2.jpg" height="400px" src="social_work2.jpg" width="600px" /></center>
+
+<p>With data science driving decisions made by the systems that govern everyone and shaping the choices that are made, people must determine: how will data science prioritize public good? How can the generation of leaders that will need to use and work with data shape the future? What can people do to channel this next wave of innovation to put social impact first? And who gets to determine what social impact means?
+    Currently, a market-first mentality governs the decisions and priorities about what data science can do. While there is benefit in anticipating greater consumerism to grow wealth, these forces are not underrepresented in the design for the future. Instead, investment is needed in data science for social impact, which seeks to answer fundamental questions of human well-being. What problems could be solved, what diseases could be eradicated, if the brightest minds and greatest resources were invested in solving a global health crisis? What data and information about solutions and people involved in the solution could recover coral reefs, and protect wetlands? What tools can be built to relieve back-breaking labor and leave room for rest, for creativity, and for education?</p>
+    
+
+<p>Gaps in the capacity of non-profit and other mission-driven organizations to embrace technology and data science are often taken up by outside contractors, by corporate social responsibility programs of technology organizations, or by short-term volunteers, but solutions that are far more sustainable and independent are needed. Social impact organizations are often charged with ensuring accountability or advocating for changed behavior of those very institutions or companies that are the leading providers of data science support. We need the non-profit and civil society sectors to have the capacity to pursue their own data science needs with as innovative and cutting-edge talent, technology, and tools as any other organization.</p>
+
+<p>People seek a world where the data and information used to anticipate future actions are a mirror, not of the world as it exists now, but of a world that everyone wants to live and thrive in. People know that everyone is more innovative, more prosperous, and the solutions more sustainable when we are diverse when people take the time to weave in the perspectives, experiences, and expertise of many people. By placing these values, social impact, at the forefront of any investment in data science, it will shape a future that will reflect who people wish to be.</p>
+<br>
+<center><img src="https://sonalipednekar.georgetown.domains/ANLY501/social_work.png"
+    width=600px height=400px /></center>
+    
+<b><p>The goal of the portfolio is to provide answers to the following questions:</p></b>
+<li> Why social workers do what they do, their motive/intention behind it?</li>
+
+<br>
+<br>
+<li>  Demographic of social worker around the world (their economic paygrade, age group, and sex ratio), and how these factors differ in various parts of the world? </li>
+<br>
+<br>
+<li>  Which country promotes social work and the population of which part of the world is more inclined towards it? </li>
+<br>
+<br>
+<li> Insights of the people on the topic of social work through tweets. </li>
+<br>
+<br>
+<li>  Is the allocation of food towards the poverty stricken areas adequate or not?</li>
+<br>
+<br>
+<li> Which parts of the world has the highest illiteracy rate and the corresponding social workers dedicated towards it? </li>
+<br>
+<br>
+<li>  Which area actively promotes gender equality and on the other hand, the social workers of which area have to fight the most for these rights </li>
+<br>
+<br>
+<li> How has the Covid-19 situation affected people's opinion about social work.</li>
+<br>
+<br>
+<li>  Is there a significant improvement in climate since the increase in awareness regarding its depreciation.   </li>
+<br>
+<br>
+<li> How has social media helped people promote and perform social work during these Covid times? </li>
+
+
+
+</div> 
+
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
