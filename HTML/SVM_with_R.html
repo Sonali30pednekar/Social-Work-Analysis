@@ -1,0 +1,294 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+ibody{
+    margin:0;
+    min-height: 100%;
+    min-width:100%;
+    
+}
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: justify;
+    text-justify: inter-word;
+}
+div {text-align: left;}
+
+.content{
+    margin-left:0;
+    padding : 2% 25% 2% 25%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+<div class="container">
+<div class = "navbar">
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a> </li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering with R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering with Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees with R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees with Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="#Naive Bayes with R">NaiveBayes with R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes with Python</a>
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="#SVM with R">SVM with R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM with Python</a>
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+    
+</div>
+</ul>
+
+
+
+
+
+<div class="content">
+
+<div class="w3-container w3-border city" id="SVM" >
+<h1><center><b>SVM</b></center></h1>
+<p><center>This page contains the SVM code and visualizations done in R for Record data. 
+
+<h3><b>What is SVM</b></h3>
+<p> The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperplanes that could be chosen. The objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence.Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, the margin of the classifier is maximized. </p>
+<br>			
+<h2><b>SVM in R</b></h2>
+<p> The SVM is created using record dataset in R. It is the same record dataset used for naive bayes. The dataset has been downloaded from UCI Machine learning repository. The link for the source can be found <a href="https://archive.ics.uci.edu/ml/datasets/Census+Income" target="_blank">here</a> This dataset consists of various features like age, workclass, education, marital status, relationship, race, sex, hours per week. The label column contains the data of whether the person is rich (salary greater than or equal to 50k) or poor(salary less than $50k).  </p>
+
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="dt_r_data_small.jpg" height="400px" src="dt_r_data_small.jpg" width="600px" /></center>
+			<center><a href="dt_r_data.jpg" target="new">View </a></center>
+			<a href="dt_r_data.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/income_evaluation.csv">Download csv file</a></center>
+<br>			
+<h3><b>Cleaning and formatting the dataset to the required format</b></h3>
+<p> The code to create clean and format the datasets can be found  <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_R.R" target="_blank">here</a> </p>
+<p>There are a lot of unwated columns in the dataframe. These columns are dropped from the dataframe, retaining only the necessary columns. The dataset is checked for NA values, and all the NA values are removed. Checking the balance of the dataset and label is very important before performing decision trees, as unbalanced dataset may lead to over or underfitting. </p>
+
+<p><center>The snapshot of the label column (income) before and after balancing. </center></p>
+<img alt="income_before_bal.jpeg" height="400px" src="income_before_bal.jpeg" width="600px" />
+&emsp;
+&emsp;
+
+<img alt="balance_label.jpeg" height="400px" src="balance_label.jpeg" width="600px" />
+
+<br>
+<h3><b>Model Building</b></h3>
+<p> The code to build the model can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_R.R" target="_blank">here</a> </p>
+<p>Before building the model, the dataset is split into training and testing sets. The split ratio is 0.75 of the total data in the training set and 0.25 data in the testing set. The SVM model is trained using the training dataset and then the model is tested using labels from the testing dataset. Three SVM models are created. The SVM models differ due to hypertuning of different parameters. Mainly the cost and kernel. The three types of kernel are polynomial, linear and radial. The cost is selected by tuning it for every kernel and selecting the best cost for each model. </p>
+
+<p><b> SVM Model 1</b></p>
+<p>This is the first SVM Model. In this model, the kernel is polynomial and the best cost after tuning is 100. The accuracy of this model is 70%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="classplot_P_R.jpeg" height="400px" src="classplot_P_R.jpeg" width="600px" />
+&emsp;
+&emsp;
+<img alt="r_svm_poly.jpg" height="400px" src="r_svm_poly.jpg" width="600px" />
+<img alt="hm_p_r.jpeg" height="400px" src="hm_p_r.jpeg" width="600px" />
+
+<p><b> SVM Model 2</b></p>
+<p>This is the second SVM Model. In this model, the kernel is linear and the best cost after tuning is 0.1. The accuracy of this model is 78%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="classplot_l_r.jpeg" height="400px" src="classplot_l_r.jpeg" width="600px" />
+&emsp;
+&emsp;
+<img alt="r_svm_linear.jpg" height="400px" src="r_svm_linear.jpg" width="600px" />
+<img alt="hm_l_r.jpeg" height="400px" src="hm_l_r.jpeg" width="600px" />
+
+<p><b> SVM Model 3</b></p>
+<p>This is the third SVM Model. In this model, the kernel is radial and the best cost after tuning is 10. The accuracy of this model is 79%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="classplot_r_R.jpeg" height="400px" src="classplot_r_R.jpeg" width="600px" />
+&emsp;
+&emsp;
+<img alt="r_svm_radial.jpg" height="400px" src="r_svm_radial.jpg" width="600px" />
+<img alt="hm_r_r.jpeg" height="400px" src="hm_r_r.jpeg" width="600px" />
+
+<h3><b>Conclusion</b></h3>
+<p>The intention was to perform svm to help predict the income class of a person given the different features. The accuracy of the models are in the range of 70-79% which is pretty decent in predicting the income group. The last model,i.e, the radial model is the best model for this data as it has the highest accuracy (79%). One of the plot for each model is created using the age and hours worked per week variable.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</HTML>

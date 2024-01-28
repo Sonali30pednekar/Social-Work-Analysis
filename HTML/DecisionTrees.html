@@ -1,0 +1,290 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+
+<ul>
+    
+   <li><a href="https://sonalipednekar.georgetown.domains/#home" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a> </li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering with R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering with Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li><a href="#Decision Trees" >  Decision Trees </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes.html" >  Naive Bayes </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM.html" >  SVM </a></li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+    
+</div>
+</ul>
+
+
+<div class="w3-container w3-border city" id="Decision Trees" >
+<h1><center><b>Decision Trees</b></center></h1>
+<p><center>This page contains the Decision Trees code and visualizations done in R for Record data and in Python for Text data. 
+
+<h3><b>What are Decision Trees</b></h3>
+<p> Decision Trees (DTs) are a supervised learning technique that predict values of responses by learning decision rules derived from features. They can be used in both a regression and a classification context. For this project, decision trees are used in the classification context. Decision tree learning is a method commonly used in data mining. The goal is to create a model that predicts the value of a target variable based on several input variables. 
+<br>			
+<h2><b>Decision Trees in R</b></h2>
+<p> The decision trees are created using record dataset in R. The dataset has been downloaded from UCI Machine learning repository. The link for the source can be found <a href="https://archive.ics.uci.edu/ml/datasets/Census+Income" target="_blank">here</a> This dataset consists of various features like age, workclass, education, marital status, relationship, race, sex, hours per week. The label column contains the data of whether the person is rich (salary greater than or equal to 50k) or poor(salary less than $50k).  </p>
+
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="dt_r_data_small.jpg" height="400px" src="dt_r_data_small.jpg" width="600px" /></center>
+			<center><a href="dt_r_data.jpg" target="new">View </a></center>
+			<a href="dt_r_data.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/income_evaluation.csv">Download csv file</a></center>
+<br>			
+<h3><b>Cleaning and formatting the dataset to the required format</b></h3>
+<p> The code to create clean and format the datasets can be found  <a href="https://sonalipednekar.georgetown.domains/ANLY501/DT_R.R" target="_blank">here</a> </p>
+<p>There are a lot of unwated columns in the dataframe. These columns are dropped from the dataframe, retaining only the necessary columns. The dataset is checked for NA values, and all the NA values are removed. Checking the balance of the dataset and label is very important before performing decision trees, as unbalanced dataset may lead to over or underfitting. The age and the hours per week are binned into categories for easier classification. </p>
+<p><center>The snapshot of the label column (income) before and after balancing. </center></p>
+<img alt="income_before_bal.jpeg" height="400px" src="income_before_bal.jpeg" width="600px" />
+
+
+<img alt="balance_label.jpeg" height="400px" src="balance_label.jpeg" width="600px" />
+
+<br>
+<h3><b>Model Building</b></h3>
+<p> The code to build the model can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/DT_R.R" target="_blank">here</a> </p>
+<p>Before building the model, the dataset is split into training and testing sets. The split ratio is 0.75 of the total data in the training set and 0.25 data in the testing set. Four different decision trees are created. The Decision Trees differ due to hypertuning of different parameters. Mainly the Complexity Parameter is tuned. </p>
+<p><b> Decision Tree 1</b></p>
+<p>This is the default decision tree. In this tree, the root node is marital status. The second split is on the basis of occupation and the third split is on education. According to the graph of top features, the top most feature is marital status </p>
+<p><center>The snapshot of the decision tree and the top feature is attached below. </center></p>
+<img alt="dt1.jpeg" height="400px" src="dt1.jpeg" width="600px" />
+<img alt="fi_1.jpeg" height="400px" src="fi_1.jpeg" width="600px" />
+
+<p><b> Decision Tree 2</b></p>
+<p>This is the second decision tree. In this tree, the root node is marital status. The second split is on the basis of occupation and the third split is on education and age and so on.The cp in this tree is considered to be 0.005. According to the graph of top features, the top most feature is marital status </p>
+<p><center>The snapshot of the decision tree and the top feature is attached below. </center></p>
+<img alt="dt2.jpeg" height="400px" src="dt2.jpeg" width="600px" />
+<img alt="fi_2.jpeg" height="400px" src="fi_2.jpeg" width="600px" />
+
+<p><b> Decision Tree 3</b></p>
+<p>This is the third decision tree. In this tree, the root node is marital status. The second split is on the basis of occupation and the third split is on education and so on.The cp in this tree is considered to be 0.01. According to the graph of top features, the top most feature is marital status. </p>
+
+<p><center>The snapshot of the decision tree and the top feature is attached below. </center></p>
+<img alt="dt3.jpeg" height="400px" src="dt3.jpeg" width="600px" />
+<img alt="fi_3.jpeg" height="400px" src="fi_3.jpeg" width="600px" />
+
+<p><b> Decision Tree 4</b></p>
+<p>This is the fourth decision tree. In this tree, only the age, hours per week and education features are used. The root node is age. The second split is on the basis of education and the third split is on hours per week and so on.The cp in this tree is considered to be 0. According to the graph of top features, the top most feature is age. </p>
+<p><center>The snapshot of the decision tree and the top feature is attached below. </center></p>
+<img alt="dt4.jpeg" height="400px" src="dt4.jpeg" width="600px" />
+<img alt="fi_4.jpeg" height="400px" src="fi_4.jpeg" width="600px" />
+
+<br>
+<h3><b>Random Forest</b></h3>
+<p> The code to create random forest can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/DT_R.R" target="_blank">here</a> </p>
+<p>Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees. For regression tasks, the mean or average prediction of the individual trees is returned.Random decision forests correct for decision trees' habit of overfitting to their training sets. In this the classification is used.</p>
+<p><center>The snapshot of the random forest are attached below.</center></p>
+<img alt="conf_rf.jpg" height="400px" src="conf_rf.jpg" width="600px" />
+<img alt="trees.jpeg" height="400px" src="trees.jpeg" width="600px" />
+<img alt="dt_rf_1.jpeg" height="400px" src="dt_rf_1.jpeg" width="600px" />
+			
+<br>
+<h2><b>Decision Trees in Python</b></h2>
+<p> The decision trees are created using text dataset in Python.The tweets are extracted on the hashtag "social worker" and hashtag "covid" . The motive behind collecting this text data was to understand the opinion of people regarding social work and different tweets regarding covid. To get a quick overview of the data, a wordcloud has been made.</p>
+<img alt="twitter_wordcloud.jpg" height="400px" src="twitter_wordcloud.jpg" width="600px" />
+<img alt="word_python.jpg" height="400px" src="word_python.jpg" width="600px" />
+
+<h3><b>Cleaning and formatting the dataset to the required format</b></h3>
+<p>There are a lot of unwated columns in the dataframe. These columns are dropped from the dataframe, retaining only the necessary columns. The stopwords are removed and the text is tokenized, lemmatized and stemmed. Countvectorizer is applied on the data to convert it to numerical format. Checking the balance of the label is very important before performing decision trees, as unbalanced dataset may lead to over or underfitting.  </p>
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="dt_twitter_small.jpg" height="400px" src="dt_twitter_small.jpg" width="600px" /></center>
+			<center><a href="dt_twitter.jpg" target="new">View </a></center>
+			<a href="dt_twitter.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/twitter_file_dt.csv">Download csv file</a></center>
+<center><img alt="dtm_cv_small.jpg" height="400px" src="dtm_cv_small.jpg" width="600px" /></center>
+			<center><a href="dtm_cv.jpg" target="new">View </a></center>
+			<a href="dtm_cv.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/DTM_CV_DT.csv">Download csv file</a></center>
+
+<h3><b>Model Building</b></h3>
+<p> The code to build the model can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTreesTweets.py" target="_blank">here</a> </p>
+<p>Before building the model, the dataset is split into training and testing sets. The split ratio is 0.75 of the total data in the training set and 0.25 data in the testing set. Three different decision trees are created. The Decision Trees differ due to hypertuning of different parameters. Mainly criterion (entropy, gini), splitter (best, random) ,max_depth is tuned. </p>
+
+<p><b> Decision Tree 1</b></p>
+<p>This is the first decision tree. In this tree the hyperparameter are criterion = "entropy", splitter = "best",max_depth = 4. In this tree, the accuracy is 88%.</p>
+<p><center>The snapshot of the decision tree and the accuracy/heatmap is attached below. </center></p>
+<img alt="dtp1.jpg" height="400px" src="dtp1.jpg" width="600px" />
+<img alt="hm1.jpg" height="400px" src="hm1.jpg" width="600px" />
+
+<p><b> Decision Tree 2</b></p>
+<p>This is the second decision tree. In this tree the hyperparameter are criterion = "entropy", splitter = "best",max_depth = 4. In this tree, the accuracy is 88%. </p>
+<p><center>The snapshot of the decision tree and the accuracy/heatmap is attached below. </center></p>
+<img alt="dtp2.jpg" height="400px" src="dtp2.jpg" width="600px" />
+<img alt="hm2.jpg" height="400px" src="hm2.jpg" width="600px" />
+
+<p><b> Decision Tree 3</b></p>
+<p>This is the third decision tree. In this tree the hyperparameter are criterion = "entropy", splitter = "best",max_depth = 4. In this tree, the accuracy is 85%. </p>
+<p><center>The snapshot of the decision tree and the accuracy/heatmap is attached below.</center></p>
+<img alt="dtp3.jpg" height="400px" src="dtp3.jpg" width="600px" />
+<img alt="hm3.jpg" height="400px" src="hm3.jpg" width="600px" />
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</HTML>

@@ -1,0 +1,288 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+ibody{
+    margin:0;
+    min-height: 100%;
+    min-width:100%;
+    
+}
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: justify;
+    text-justify: inter-word;
+}
+div {text-align: left;}
+
+.content{
+    margin-left:0;
+    padding : 2% 25% 2% 25%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+<div class="container">
+    <div class = "navbar">
+
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a> </li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="#Naive Bayes with R">NaiveBayes in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
+        <a href="#SVM with Python">SVM in Python</a>
+        
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+    
+</div>
+</ul>
+
+
+<div class="content">
+
+
+<div class="w3-container w3-border city" id="SVM" >
+<h1><center><b>SVM</b></center></h1>
+<p><center>This page contains the SVM code and visualizations done in Python for Text data. 
+
+<h3><b>What is SVM</b></h3>
+<p> The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperplanes that could be chosen. The objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence.Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, the margin of the classifier is maximized. </p>
+<br>
+
+<h2><b>SVM in Python</b></h2>
+<p> The SVM is created using text dataset in Python.The tweets are extracted on the hashtag "social worker" and hashtag "covid" . The motive behind collecting this text data was to understand the opinion of people regarding social workers and different tweets regarding covid. To get a quick overview of the data, a wordcloud of both the hashtags has been made.</p>
+<img alt="wc1_nb.jpg" height="400px" src="wc1_nb.jpg" width="600px" />
+&emsp;
+&emsp;
+<img alt="wc2_nb.jpg" height="400px" src="wc2_nb.jpg" width="600px" />
+
+<h3><b>Cleaning and formatting the dataset to the required format</b></h3>
+<p>There are a lot of unwated columns in the dataframe. These columns are dropped from the dataframe, retaining only the necessary columns. The stopwords are removed and the text is tokenized, lemmatized and stemmed. Countvectorizer is applied on the data to convert it to numerical format. Checking the balance of the label is very important before performing svm, as unbalanced dataset may lead to over or underfitting.  </p>
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="dt_twitter_small.jpg" height="400px" src="dt_twitter_small.jpg" width="600px" /></center>
+			<center><a href="dt_twitter.jpg" target="new">View </a></center>
+			<a href="dt_twitter.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/twitter_file_dt.csv">Download csv file</a></center>
+<center><img alt="dtm_cv_small.jpg" height="400px" src="dtm_cv_small.jpg" width="600px" /></center>
+			<center><a href="dtm_cv.jpg" target="new">View </a></center>
+			<a href="dtm_cv.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/DTM_CV_DT.csv">Download csv file</a></center>
+
+<h3><b>Model Building</b></h3>
+<p> The code to build the model can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_Python.py" target="_blank">here</a> </p>
+<p>Before building the model, the dataset is split into training and testing sets. The split ratio is 0.75 of the total data in the training set and 0.25 data in the testing set. Three different SVM models are created. The SVM models differ due to hypertuning of different parameters. Mainly the cost and kernel. The three types of kernel are polynomial, linear and radial. The cost is selected by tuning it for every kernel and selecting the best cost for each model.</p>
+
+<p><b> SVM Model 1</b></p>
+<p>This is the first SVM Model. In this model, the kernel is polynomial and the best cost after tuning is 10. The accuracy of this model is 75%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="svm_p_python.jpg" height="400px" src="svm_p_python.jpg" width="600px" />
+
+<p><b> SVM Model 2</b></p>
+<p>This is the second SVM Model. In this model, the kernel is linear and the best cost after tuning is 1. The accuracy of this model is 94%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="svm_l_python.jpg" height="400px" src="svm_l_python.jpg" width="600px" />
+
+
+<p><b> SVM Model 3</b></p>
+<p>This is the third SVM Model. In this model, the kernel is radial and the best cost after tuning is 5. The accuracy of this model is 95%. </p>
+<p><center>The snapshot of the SVM Classification plot and heatmap is attached below.  </center></p>
+<img alt="svm_r_python.jpg" height="400px" src="svm_r_python.jpg" width="600px" />
+
+
+<h3><b>Conclusion</b></h3>
+<p>The SVM model classified tweets generated from Twitter into the hashtag class (socialworker and covid) of different tweets. The accuracy of the models are in the range of 75-95% which is pretty high in predicting the income group With the collection of words, the model is able to predict or classify the tweets into particular classes. The last model,i.e, the radial model is the best model for this data as it has the highest accuracy (95%). It is the case for both record and text data.  </p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</HTML>

@@ -1,0 +1,244 @@
+<HTML>
+   <body style="background-color:#F6F5F5;">
+
+   <style>
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: .8;
+}
+
+</style>
+
+<div class="topnav">
+    
+    <a href="https://sonalipednekar.georgetown.domains/#home" >  About Me </a>
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a> 
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" > Data Gathering </a>
+
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html">  Data Cleaning </a>
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a>
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering.html" >  Clustering </a>
+    
+    <a href="#ARM and Networking" target="_blank">  ARM and Networking </a>
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees.html" >  Decision Trees </a>
+    
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes.html" >  Naive Bayes </a> 
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM.html" >  SVM </a>
+   
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a>
+    
+    
+    <a href="https://sonalipednekar.georgetown.domains/ANLY501/Infographic.html" > Infographic </a>
+    
+</div>
+
+
+
+<div class="w3-container w3-border city" id="ARM and Networking" >
+<h1><center><b>ARM and Networking</b></center></h1>
+<p><center>This page contains the ARM and Networking code and visualizations done in R for Twitter data. Before starting with ARM, the first step to be followed is to convert the dataset into a transactional dataset. 
+
+<h3><b>Collecting data</b></h3>
+<p> For ARM we need text data. The library tweetR is used to extract the tweets for the hashtag provided by the user.For this the tweets containing mental health and social work are extracted from Twitter using its API. The dataframe consists of a lot of unwated columns.
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="tweet_arm_small.jpg" height="400px" src="tweet_arm_small.jpg" width="600px" /></center>
+			<center><a href="tweet_arm.jpg" target="new">View </a></center>
+			<a href="tweet_arm.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/Twitter_Search.csv">Download csv file</a></center>
+<br>			
+<h3><b>Cleaning and formatting the dataset to the required format</b></h3>
+<p> The code to create clean and format the datasets can be found  <a href="https://sonalipednekar.georgetown.domains/ANLY501/ARM_R.R" target="_blank">here</a> </p>
+<p>There are a lot of unwated columns in the dataframe. Only the text column is needed to perform ARM. The next important step is to convert the dataframe into a transaction dataset. In ARM, there are three ways to represent the transaction data,it should either be in the basket, single or sparse format. Sparse is not used that often. For this project, the basket format is used. In the basket format, each row is a different transaction and there are not repetitions in the a particular transaction.  </p>
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="trans_tweet_small.jpg" height="400px" src="trans_tweet_small.jpg" width="600px" /></center>
+			<center><a href="trans_tweet.jpg" target="new">View </a></center>
+			<a href="tweet_arm.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/Transaction_tweet.csv">Download csv file</a></center>
+
+<br>			
+<p>For cleaning, all the stopwords, digits,hyperlinks and unicodes for emojis are removed and punctuations and tokenizations are applied on the dataset. Now, the actual transaction data in the basket format that needs to be used is achieved.</p>
+<p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
+<center><img alt="basket_tweet.jpg" height="400px" src="basket_tweet.jpg" width="600px" /></center>
+			<center><a href="basket_tweet.jpg" target="new">View </a></center>
+			<a href="basket_tweet.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/UpdatedTweetFile.csv">Download csv file</a></center>
+			
+<br>
+<h3><b>What is Association Rule Mining?</b></h3>
+<p>It is an Unsupervised Learning Technique. It is a discovery based model. ARM looks for associations and relations in qualitative data. The most commom example is the Market Basket example (Kumar,2008) in which each row is considered as a transaction.  </p>
+<p>Many applications of ARM include:</p>
+<p>- Image identification</p>
+<p> - Text Analytics: like Twitter data</p>
+<p> - Click streams</p>
+<p> - Bio data : binding sites, AA's in proteins</p>
+ 
+<h3><b>What is a Rule? What are the different types of Rules?</b></h3>
+<p>A rule is a set of correlations. The rule defines the threshold values for the associations.</p>
+<p>The different types of rules are :</p>
+<p><b>1. Support -</b> Support is an indication of how frequently the itemset appears in the dataset.The support of X with respect to T is defined as the proportion of transactions in the dataset which contains the itemset X. The Support can be calculated as Support: Sup(X,T)=P(X,T)</p>
+<p><b>2. Confidence -</b> Confidence is an indication of how often the rule has been found to be true.The confidence value of a rule, X -> Y , with respect to a set of transactions T, is the proportion of the transactions that contains X which also contains Y. The confidence can be calculated as : Confidence: Conf(x,y)=P(x,y)/P(x)</p>
+<p><b>3. Lift - </b>It is the ratio of confidence to support. </p>
+<p>-- If the rule had a lift of 1, it would imply that the probability of occurrence of the antecedent and that of the consequent are independent of each other. When two events are independent of each other, no rule can be drawn involving those two events.</p>
+<p>-- If the lift is > 1, that lets us know the degree to which those two occurrences are dependent on one another, and makes those rules potentially useful for predicting the consequent in future data sets.</p>
+<p>-- If the lift is < 1, that lets us know the items are substitute to each other. This means that presence of one item has negative effect on presence of other item and vice versa.</p>
+<p>The value of lift is that it considers both the support of the rule and the overall data set.</p>
+
+
+<h3><b>Visualization of the Rules</b></h3>
+<p> The code to create Visualizations can be found  <a href="https://sonalipednekar.georgetown.domains/ANLY501/ARM_R.R" target="_blank">here</a> </p>
+<p>The frequency of the words in the tweets are plotted using a histogram.</p>
+<center><img alt="freq_trans.jpeg" height="400px" src="freq_trans.jpeg" width="600px" /></center>
+<p>From the graph it can be seen that mental health and social work are common words in the tweets.The words in these tweets are social,great,awarded,pandemic,etc. This establishes that even pandemic is affecting people's mental health. This is the reason why there is a high volume of tweets related to these topics.   </p>
+
+<br>
+<p><center>The top 20 rules for Support:</center></p>
+<img alt="support_ss.jpg" height="400px" src="support_ss.jpg" width="600px" />
+<img alt="supp_scatter.jpeg" height="400px" src="supp_scatter.jpeg" width="600px" />
+<center><img alt="graph_supp.jpg" height="400px" src="graph_supp.jpg" width="600px" /></center>
+
+<br>
+<p><center>The top 20 rules for Confidence:</center></p>
+<img alt="conf_ss.jpg" height="400px" src="conf_ss.jpg" width="600px" />
+<img alt="conf_scatter.jpeg" height="400px" src="conf_scatter.jpeg" width="600px" />
+<center><img alt="conf_graph.jpg" height="400px" src="conf_graph.jpg" width="600px" /></center>
+
+<br>
+<p><center>The top 20 rules for Lift:</center></p>
+<img alt="lift_ss.jpg" height="400px" src="lift_ss.jpg" width="600px" />
+<img alt="lift_scatter.jpeg" height="400px" src="lift_scatter.jpeg" width="600px" />
+<center><img alt="lift_graph.jpg" height="400px" src="lift_graph.jpg" width="600px" /></center>
+
+<h3><b>NetworkD3</b></h3>
+<p></p>Interactive Network Graphs are created using the NetworkD3 package in R. Transaction data needs to be transformed in a particular format with different parameters to be able to pass NetworkD3.
+<p> The code to create NetworkD3 graphs can be found  <a href="https://sonalipednekar.georgetown.domains/ANLY501/ARM_R.R" target="_blank">here</a> </p>
+<iframe src="https://sonalipednekar.georgetown.domains/ANLY501/Network_D3.html" style="width:1200px; height:500px; border: 1px solid black;"></iframe>
+
+
+<h3><b>Conclusions</b></h3>
+<p>
+Firstly, when searched for the hashtag of mental health and social work, words like pandemic pop up in the frequently tweeted words. The open discussion about Mental health is a comparatively new discussion that has started to pop up. Mental health has been discussed even more in the pandemic. Twitter feels like an apt place where the youth has discussions about it.</p>
+<p>Even words like college and community are frequently used as youth are comparatively more charged and vocal about topics like social work and mental health.</p>
+             
+</div>
+
+
+
+
+
+
+
+
+</HTML>

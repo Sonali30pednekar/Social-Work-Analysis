@@ -1,0 +1,9 @@
+ID Gender,Gender,ID Year,Year,Total Population,Total Population MOE Appx,Record Count,PUMS Occupation,ID PUMS Occupation,Slug PUMS Occupation,share
+1,"Male",2017,"2017",192506,10768.82991655018,1886,"Social workers","211020","social-workers",0.1894270526856475
+2,"Female",2017,"2017",823748,22254.717279999713,8189,"Social workers","211020","social-workers",0.8105729473143525
+1,"Male",2016,"2016",189580,10686.699059392475,1787,"Social workers","211020","social-workers",0.19095641383089307
+2,"Female",2016,"2016",803212,21976.038563137212,7936,"Social workers","211020","social-workers",0.8090435861691069
+1,"Male",2015,"2015",175853,10292.735498736132,1760,"Social workers","211020","social-workers",0.1797843442558425
+2,"Female",2015,"2015",802280,21963.17145450679,7900,"Social workers","211020","social-workers",0.8202156557441574
+1,"Male",2014,"2014",191688,10745.871416766891,1818,"Social workers","211020","social-workers",0.20120689709465084
+2,"Female",2014,"2014",761003,21391.88559273943,7706,"Social workers","211020","social-workers",0.7987931029053492

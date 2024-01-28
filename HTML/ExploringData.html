@@ -1,0 +1,259 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+<div class = "navbar">
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="#ExploringData">  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >NaiveBayes in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
+        
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+    
+</div>
+</ul>
+
+
+
+<div class="w3-container w3-border city" id="Data Gathering" >
+    <br>
+    <br>
+    
+<h1><center><b>Exploring Data</b></center></h1>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<table style="width:100%">
+	<tbody>
+		<tr>
+			<th>Exploring Data with R</th>
+			<th>Exploring Data with Python</th>
+		</tr>
+		<tr>
+			<td width = "50%"><center><img alt="R_vis_pie" height="500px" src="R_vis_pie.jpg" width="550px" /></center>
+			<br>
+			<center><a href="R_vis_pie.jpg" target="new">View </a></center>
+			<a href="R_vis_pie.jpg" target="new"> </a>
+			<center> This is the piechart of Gender. There are approximately equal number of males and females who perform social work in the USA. </center> 
+			
+			<td width = "50%"><center><img alt="twitter_wordcloud" height="500px" src="twitter_wordcloud.jpg" width="550px" /></center>
+			<br>
+			<center><a href="twitter_wordcloud.jpg" target="new">View </a></center>
+			<a href="twitter_wordcloud.jpg" target="new"> </a>
+			<center> This is the wordcloud of twitter data with the hashtag social work </center> 
+			
+			
+		</tr>
+		<tr>
+			<td><center><img alt="R_vis_box" height="400px" src="R_vis_box.jpg" width="500px" /></center>
+			<br>
+			<center><a href="R_vis_box.jpg" target="new">View </a></center>
+			<a href="R_vis_box.jpg" target="new"> </a>
+			<center> This is the boxplot of Age.The median of this boxplot is around 50 (47 to be precise). There were no outliers present in this raw data. </center> 
+
+			</td>
+		</tr>
+		<tr>
+		    <td>
+			<center> For more visualizations and the code for these visualizations, click here. The rmd file is attached in the link.</center> 
+			<center><a href="http://sonalipednekar.georgetown.domains/ANLY501/R_Cleaning_Record.html">View Code and Visualization </a></center>
+
+			</td>
+			
+		</tr>
+		
+		
+	</tbody>
+</table>
+</div>

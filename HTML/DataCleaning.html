@@ -1,0 +1,304 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+ibody{
+    margin:0;
+    min-height: 100%;
+    min-width:100%;
+    
+}
+
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: justify;
+    text-justify: inter-word;
+}
+div {text-align: left;}
+
+.content{
+    margin-left:0;
+    padding : 2% 25% 2% 25%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+<div class="container">
+<div class = "navbar">
+
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a> </li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    
+    
+    <li> <a href="#Data Cleaning">  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >NaiveBayes in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
+        
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+</ul>
+  
+</div>
+</div>
+
+
+
+
+
+<div class="w3-container w3-border city" id="Data Gathering" >
+<br>
+<br>
+<h1><center><b>Data Cleaning</b></center></h1>
+
+<style>
+th, td {
+  border: 1px solid black;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<table class = "center" style="width:65%">
+	<tbody>
+		<tr>
+			<th>Snippet of Dataset</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><img alt="r_cleaning_pic" height="250px" src="r_cleaning_pic.jpg" width="450px" />
+			<center><a href="r_cleaning_pic.jpg" target="new">View </a></center>
+			<a href="r_cleaning_pic.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/cleaned_age_gender.csv">Download clean csv file</a></center>
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/Age_by_Gender.csv">Download raw csv file</a></center>
+			</td>
+			<td><h3> <center><b>R code - Record Data</b></center></h3>
+			<br>
+			  <center> R is used for cleaning labeled record data. The data used is Age by Gender of Social workers in the USA. All the additional unnecesary columns are dropped, the data is checked for missing NA values and the type of the columns of the dataset are fixed. </center> 
+			  <br>
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/r_cleaning.R">R code </a></center>
+			</td>
+		</tr>
+		<tr>
+			<td><img alt="clean_twitter_pic" height="250px" src="clean_twitter_pic.jpg" width="450px" />
+			<center><a href="clean_twitter_pic.jpg" target="new">View </a></center>
+			<a href="clean_twitter_pic.jpg" target="new"> </a>
+            <center><a href="https://sonalipednekar.georgetown.domains/ANLY501/test_file.csv">Download raw csv file</a></center>
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/Clean_Twitter_data.csv">Download clean csv file</a></center>
+			</td> 
+			<td><h3> <center><b>Python code - Text data</b></center></h3>
+			<center>Python is used for cleaning text data from Twitter. All the columns are dropped and only the text column is retained. Countvectorizer and WordCloud is used.</center> 
+			<br>
+			<center><a href="http://sonalipednekar.georgetown.domains/ANLY501/Python_twitter_cleaning .py">Python code </a></center>
+			</td>
+		</tr>
+		
+		
+	</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
