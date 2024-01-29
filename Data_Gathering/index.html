@@ -1,0 +1,307 @@
+<HTML>
+<head>
+<body style="background-color:#F6F5F5;">
+
+<style>
+
+body {
+	font-family: verdana;
+    background-color : #F6F5F5 ;
+    position : relative
+    style: #232435;
+
+}
+
+
+.navbar{
+    top:0;
+    position: fixed;
+    width : 100%;
+    
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1F1A40;
+}
+
+.topnav a {
+  float: left;
+  color: #BBD8F2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #D3E0EA;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFFFFF;
+  color: white;
+}
+
+.headerLogo{
+  top:200px;
+  height:250px;
+  width:200px;
+  line-height:200px;
+
+  overflow:hidden;
+ 
+  <!-- top:200px; height:900px; width:1450px; line-height:500px -->
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34495E;
+    max-width:1500px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+td {
+    padding: 5px;
+    text-align: left;
+    width: 500px;
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+   background-color:#ffffff
+}
+
+img:hover {
+  opacity: 1;
+}
+
+</style>
+
+<div class = "navbar">
+<ul>
+    
+   <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a></li>
+    
+    <li><a href="#Data Gathering"> Data Gathering </a></li>
+    
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Clustering</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        </div>
+    </li>
+
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        </div>
+    </li>
+    
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >NaiveBayes in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SVM</a>
+    
+        <div class="dropdown-content">
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
+        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
+        
+        </div>
+    </li>
+   
+    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    
+    
+</ul>   
+</div>
+
+
+
+
+
+
+
+
+<div class="w3-container w3-border city" id="Data Gathering" >
+<br>
+<br>
+
+<h1><center><b>Data Gathering</b></center></h1>
+
+<style>
+
+th, td {
+  border: 1px solid black;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<table class = "center" style="width:65%">
+	<tbody>
+		<tr>
+			<th>Snippet of Dataset</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td><img alt="Twitter_data_1" height="250px" src="Twitter_data_1.jpg" width="450px" />
+			<center><a href="Twitter_data.jpg" target="new">View </a></center>
+			<a href="Twitter_data.jpg" target="new"> </a>
+
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/test_file.csv">Download csv file</a></center>
+			</td>
+			<td><h3> <center><b>R API</b></center></h3>
+			<br>
+			  <center> The Twitter API is used to extract tweets on the hashtag socialwork. The motive behind this is to understand the opinion of people regarding social work.</center>
+			   <br>
+			   <center>*The photo attached is the partial snippet of the dataframe. Click on View button to look at all the columns.</center>
+			   <br>
+			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/Twitter_API.R">R code </a></center>
+			</td>
+		</tr>
+		<tr>
+			<td><img alt="Python_API" height="250px" src="Python_API.jpg" width="450px" />
+			<center><a href="Python_API.jpg" target="new">View </a></center>
+			<a href="Python_API.jpg" target="new"> </a>
+
+			<center><a href="http://sonalipednekar.georgetown.domains/ANLY501/poverty.json">Download json file </a></center>
+			</td> 
+			<td><h3> <center><b>Python API</b></center></h3>
+			<center>The main source of this data is The World Bank. With the help of their API, the data of different areas is gathered related to poverty. This data will be used to connect poverty to social work in that particular area. </center>
+			<br>
+			<center><a href="http://sonalipednekar.georgetown.domains/ANLY501/Poverty_API.py">Python code </a></center>
+			</td>
+		</tr>
+		<tr>
+			<td><img alt="Raw_data_1" height="250px" src="Raw_data_1.jpg" width="450px" />
+			<center><a href="Raw_data.jpg" target="new">View </a></center>
+			<a href="Raw_data_1.jpg" target="new"> </a>
+
+			</td>
+			<td><h3><center><b>Raw Data</b></center></h3> 
+			<p>Age By Gender : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Age_by_Gender.csv">Download csv file </a></p>
+			<p>Gender Composition : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Gender_Composition.csv">Download csv file </a></p>
+			<p>Spatial Concentration : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Spatial_Concentration.csv">Download csv file </a></p>
+			<p>Wage by Location : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Wage_by_Location.csv">Download csv file </a></p>
+			<p>Wage Distribution : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Wage_Distribution.csv">Download csv file </a></p>
+			<p>Yearly Wage : <a href="http://sonalipednekar.georgetown.domains/ANLY501/Yearly_Wage.csv">Download csv file </a></p>
+			<p>The source of this raw data :  <a href="https://datausa.io/search/?q=social%20work"> Raw Data Source</a></p>
+			</td>
+		</tr>
+		
+		
+	</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
