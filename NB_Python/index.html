@@ -162,32 +162,32 @@ img:hover {
     
    <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a></li>
+   <li><a href="index.html" >  Introduction </a></li>
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
+    <li><a href="../Data_Gathering/index.html" >  Data Gathering </a></li>
     
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
+    <li><a href="../Data_Cleaning/index.html" >  Data Cleaning </a></li>
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+    <li><a href="../Exploring_Data/index.html" >  Exploring Data </a></li>
     
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Clustering</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Clustering_with_R.html" >Clustering in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        <a href="../Clustering_R/index.html" >Clustering in R</a>
+        <a href="../Clustering_Python/index.html">Clustering in Python</a>
         </div>
     </li>
 
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    <li><a href="../ARM/index.html" >  ARM and Networking </a></li>
     
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        <a href="../Decision_Trees_R/index.html" >Decision Trees in R</a>
+        <a href="../Decision_Trees_Python/index.html" >Decision Trees in Python</a>
         </div>
     </li>
     
@@ -196,23 +196,24 @@ img:hover {
         <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >Naive Bayes in R</a>
+        <a href="../NB_R/index.html" >NaiveBayes in R</a>
         <a href="#Naive Bayes with Python">Naive Bayes in Python</a>
         
         </div>
     </li>
     
-    <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">SVM</a>
     
-        <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
-        
-        </div>
-    </li>
-   
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">SVM</a>
+
+    <div class="dropdown-content">
+    <a href="../SVM_R/index.html" >SVM in R</a>
+    <a href="../SVM_Python/index.html" >SVM in Python</a>
+    
+    </div>
+</li>
+
+<li><a href="../Conclusions/index.html" >  Conclusions </a></li>
     
     
     
@@ -229,43 +230,43 @@ img:hover {
 
 <h2><b>Naive Bayes in Python</b></h2>
 <p> The naive bayes is created using text dataset in Python.The tweets are extracted on the hashtag "social worker" and hashtag "covid" . The motive behind collecting this text data was to understand the opinion of people regarding social workers and different tweets regarding covid. To get a quick overview of the data, a wordcloud of both the hashtags has been made.</p>
-<img alt="wc1_nb.jpg" height="400px" src="wc1_nb.jpg" width="600px" />
+<img alt="wc1_nb.jpg" height="400px" src="../Images/wc1_nb.jpg" width="600px" />
 &emsp;
 &emsp;
-<img alt="wc2_nb.jpg" height="400px" src="wc2_nb.jpg" width="600px" />
+<img alt="wc2_nb.jpg" height="400px" src="../Images/wc2_nb.jpg" width="600px" />
 
 <h3><b>Cleaning and formatting the dataset to the required format</b></h3>
 <p>There are a lot of unwated columns in the dataframe. These columns are dropped from the dataframe, retaining only the necessary columns. The stopwords are removed and the text is tokenized, lemmatized and stemmed. Countvectorizer is applied on the data to convert it to numerical format. Checking the balance of the label is very important before performing decision trees, as unbalanced dataset may lead to over or underfitting.  </p>
 <p><center>The snapshot of the dataset and the link to the csv file is attached below.</center></p>
-<center><img alt="dt_twitter_small.jpg" height="400px" src="dt_twitter_small.jpg" width="600px" /></center>
-			<center><a href="dt_twitter.jpg" target="new">View </a></center>
-			<a href="dt_twitter.jpg" target="new"> </a>
+<center><img alt="dt_twitter_small.jpg" height="400px" src="../Images/dt_twitter_small.jpg" width="600px" /></center>
+			<center><a href="../Images/dt_twitter.jpg" target="new">View </a></center>
+			<a href="../Images/dt_twitter.jpg" target="new"> </a>
 
-			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/twitter_file_dt.csv">Download csv file</a></center>
-<center><img alt="dtm_cv_small.jpg" height="400px" src="dtm_cv_small.jpg" width="600px" /></center>
-			<center><a href="dtm_cv.jpg" target="new">View </a></center>
-			<a href="dtm_cv.jpg" target="new"> </a>
+			<center><a href="../Csv/twitter_file_dt.csv">Download csv file</a></center>
+<center><img alt="dtm_cv_small.jpg" height="400px" src="../Images/dtm_cv_small.jpg" width="600px" /></center>
+			<center><a href="../Images/dtm_cv.jpg" target="new">View </a></center>
+			<a href="../Images/dtm_cv.jpg" target="new"> </a>
 
-			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/DTM_CV_DT.csv">Download csv file</a></center>
+			<center><a href="../Csv/DTM_CV_DT.csv">Download csv file</a></center>
 
 <h3><b>Model Building</b></h3>
-<p> The code to build the model can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_Python.py" target="_blank">here</a> </p>
+<p> The code to build the model can be found <a href="../Source_code_Python/NaiveBayes_Python.py" target="_blank">here</a> </p>
 <p>Before building the model, the dataset is split into training and testing sets. The split ratio is 0.75 of the total data in the training set and 0.25 data in the testing set. Three different naive bayes models are created. The Naive Bayes models differ due to hypertuning of different parameters. Mainly the alpha values.</p>
 
 <p><b> Naive Bayes Model 1</b></p>
 <p>This is the first naive bayes model. In this model, the hyperparameter are alpha = 1. In this model, the accuracy is 95%.</p>
 <p><center>The snapshot of the accuracy/heatmap is attached below. </center></p>
-<center><img alt="nb1_python.jpg" height="400px" src="nb1_python.jpg" width="600px" /></center>
+<center><img alt="nb1_python.jpg" height="400px" src="../Images/nb1_python.jpg" width="600px" /></center>
 
 <p><b> Naive Bayes Model 2</b></p>
 <p>This is the second naive bayes model. In this model, the hyperparameter are alpha = 5. In this model, the accuracy is 95%.</p>
 <p><center>The snapshot of the accuracy/heatmap is attached below. </center></p>
-<center><img alt="nb2_python.jpg" height="400px" src="nb2_python.jpg" width="600px" /></center>
+<center><img alt="nb2_python.jpg" height="400px" src="../Images/nb2_python.jpg" width="600px" /></center>
 
 <p><b> Naive Bayes Model 3</b></p>
 <p>This is the third naive bayes model. In this model, the hyperparameter are alpha = 0. In this model, the accuracy is 94%.</p>
 <p><center>The snapshot of the accuracy/heatmap is attached below. </center></p>
-<center><img alt="nb3_python.jpg" height="400px" src="nb3_python.jpg" width="600px" /></center>
+<center><img alt="nb3_python.jpg" height="400px" src="../Images/nb3_python.jpg" width="600px" /></center>
 
 <h3><b>Conclusion</b></h3>
 <p>The Naive Bayes model classified tweets generated from Twitter into the hashtag class (socialworker and covid) of different tweets. The accuracy of the models are 95% and 94%. The accuracy is pretty high. With the collection of words, the model is able to predict or classify the tweets into particular classes.  </p>
