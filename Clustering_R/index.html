@@ -159,32 +159,32 @@ img:hover {
     
    <li><a href="https://sonalipednekar.netlify.app/" >  About Me </a></li>
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Introduction.html" >  Introduction </a></li>
+   <li><a href="index.html" >  Introduction </a></li>
     
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataGathering.html" >  Data Gathering </a></li>
-    
-    
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/DataCleaning.html" >  Data Cleaning </a></li>
-    
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ExploringData.html" >  Exploring Data </a></li>
+   <li><a href="../Data_Gathering/index.html" >  Data Gathering </a></li>
+   
+   
+   <li><a href="../Data_Cleaning/index.html" >  Data Cleaning </a></li>
+   
+   <li><a href="../Exploring_Data/index.html" >  Exploring Data </a></li>
     
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Clustering</a>
     
         <div class="dropdown-content">
         <a href="#Clustering_with_R">Clustering in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_with_Python.html" >Clustering in Python</a>
+        <a href="../Clustering_Python/index.html" >Clustering in Python</a>
         </div>
     </li>
 
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/ARMandNetworking.html" >  ARM and Networking </a></li>
+    <li><a href="../ARM/index.html" >  ARM and Networking </a></li>
     
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Decision Trees</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_R.html" >Decision Trees in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/DecisionTrees_with_Python.html" >Decision Trees in Python</a>
+        <a href="../Decision_Trees_R/index.html" >Decision Trees in R</a>
+        <a href="../Decision_Trees_Python/index.html" >Decision Trees in Python</a>
         </div>
     </li>
     
@@ -193,8 +193,8 @@ img:hover {
         <a href="javascript:void(0)" class="dropbtn">Naive Bayes</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_R.html" >NaiveBayes in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/NaiveBayes_with_Python.html" >NaiveBayes in Python</a>
+        <a href="../NB_R/index.html" >NaiveBayes in R</a>
+        <a href="../NB_Python/index.html" >NaiveBayes in Python</a>
         
         </div>
     </li>
@@ -203,13 +203,13 @@ img:hover {
         <a href="javascript:void(0)" class="dropbtn">SVM</a>
     
         <div class="dropdown-content">
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_R.html" >SVM in R</a>
-        <a href="https://sonalipednekar.georgetown.domains/ANLY501/SVM_with_Python.html" >SVM in Python</a>
+        <a href="../SVM_R/index.html" >SVM in R</a>
+        <a href="../SVM_Python/index.html" >SVM in Python</a>
         
         </div>
     </li>
    
-    <li><a href="https://sonalipednekar.georgetown.domains/ANLY501/Conclusions.html" >  Conclusions </a></li>
+    <li><a href="../Conclusions/index.html" >  Conclusions </a></li>
     
     
     
@@ -221,50 +221,50 @@ img:hover {
 <div class="w3-container w3-border city" id="Clustering" >
 <h1><center><b>Clustering with R</b></center></h1>
 <p><center>This page contains the clustering code and visualizations done in R for record data. The dataset has been downloaded from UCI Machine learning repository. The link for the source can be found <a href="https://archive.ics.uci.edu/ml/datasets/Census+Income" target="_blank">here</a> This dataset consists of various columns like age, workclass, education, marital status, relationship, race, sex, hours per week. The label column contains the data of whether the person is rich (salary greater than or equal to 50k) or poor(salary less than $50k). The endoding for this dataset can be found <a href="encoding.jpg" target ="new">here</a>  </center></p>
-<center><img alt="R_Data_Cluster.jpg" height="400px" src="R_Data_Cluster.jpg" width="600px" /></center>
-			<center><a href="R_Data_Cluster.jpg" target="new">View </a></center>
-			<a href="R_Data_Cluster.jpg" target="new"> </a>
+<center><img alt="R_Data_Cluster.jpg" height="400px" src="../Images/R_Data_Cluster.jpg" width="600px" /></center>
+			<center><a href="../Images/R_Data_Cluster.jpg" target="new">View </a></center>
+			<a href="../Images/R_Data_Cluster.jpg" target="new"> </a>
 
-			<center><a href="https://sonalipednekar.georgetown.domains/ANLY501/income_data.csv">Download csv file</a></center>
+			<center><a href="../Csv/income_data.csv">Download csv file</a></center>
 <br>			
 <h3><b>Finding the optimal number of clusters</b></h3>
 
 <p>To start with KMeans, the first thing that is required is the number of clusters. The Elbow method and the Silhouette method were used to obtain the optimal value of k.</p>
 
-<center><img alt="Elbow.jpeg" height="400px" src="Elbow.jpeg" width="600px" />
+<center><img alt="Elbow.jpeg" height="400px" src="../Images/Elbow.jpeg" width="600px" />
 &emsp;
 &emsp;
 &ensp;
-<img alt="Silhoutte.jpeg" height="400px" src="Silhoutte.jpeg" width="600px" /></center>
+<img alt="Silhoutte.jpeg" height="400px" src="../Images/Silhoutte.jpeg" width="600px" /></center>
 <p> From the Elbow and Silhouette method it can be inferred that the k should be taken as 2,4,8. </p>
-<p> The code for finding optimal number of cluster can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_R.R" target="_blank">here</a> </p>
+<p> The code for finding optimal number of cluster can be found <a href="../Source_code_R/Cluster_R.R" target="_blank">here</a> </p>
 <br>
 <h3><b>K Means Clustering</b></h3>
 <p> K means clustering is performed on the data, with the assumption that k is 2 (can be seen from the Elbow and Silhouette Method). </p>
-<center><img alt="k_2.jpeg" height="400px" src="k_2.jpeg" width="600px" /></center>
+<center><img alt="k_2.jpeg" height="400px" src="../Images/k_2.jpeg" width="600px" /></center>
 <p> K means clustering is performed on the data, with the assumption that k is 4 (can be seen from the Elbow and Silhouette Method). </p>
-<center><img alt="Cluster_plot.jpeg" height="400px" src="Cluster_plot.jpeg" width="600px" /></center>
+<center><img alt="Cluster_plot.jpeg" height="400px" src="../Images/Cluster_plot.jpeg" width="600px" /></center>
 <p> K means clustering is performed on the data, with the assumption that k is 8 (can be seen from the Elbow and Silhouette Method). </p>
-<center><img alt="r_8.jpeg" height="400px" src="r_8.jpeg" width="600px" /></center>
-<p>The code for K Means Clustering can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_R.R" target="_blank">here</a></p>
+<center><img alt="r_8.jpeg" height="400px" src="../Images/r_8.jpeg" width="600px" /></center>
+<p>The code for K Means Clustering can be found <a href="../Source_code_R/Cluster_R.R" target="_blank">here</a></p>
 <p>The clusters for this data are overlapping, this can still be improved.</p>
 <br>
 <h3><b>Calculating the distances</b></h3>
 
 <p>Different methods are used to plot the dendogram in R</p>
-<center><img alt="Dendogram.jpeg" height="400px" src="Dendogram.jpeg" width="600px" /></center>
+<center><img alt="Dendogram.jpeg" height="400px" src="../Images/Dendogram.jpeg" width="600px" /></center>
 <p> The links for different dendograms can be found below:</p>
-<p><a href="Euclidean.jpeg" target="new">1. Euclidean Distance </a></p>
-<p><a href="Manhattan.jpeg" target="new">2. Manhattan Distance </a></p>
-<p><a href="Cosine_Similarity.jpeg" target="new">3. Cosine Similarity Distance </a></p>
-<p><a href="Minkowski.jpeg" target="new">4. Minkowski Distance </a></p>
+<p><a href="../Images/Euclidean.jpeg" target="new">1. Euclidean Distance </a></p>
+<p><a href="../Images/Manhattan.jpeg" target="new">2. Manhattan Distance </a></p>
+<p><a href="../Images/Cosine_Similarity.jpeg" target="new">3. Cosine Similarity Distance </a></p>
+<p><a href="../Images/Minkowski.jpeg" target="new">4. Minkowski Distance </a></p>
 
-<p> The code for calculating the distances can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_R.R" target="_blank">here</a> </p>
+<p> The code for calculating the distances can be found <a href="../Source_code_R/Cluster_R.R" target="_blank">here</a> </p>
 <br>
 
 <h3><b>Predicting new category</b></h3>
 <p>Three new vectors are created, to predict which cluster that vector belongs to,distance of the vector from the cluster centers is calculated. It belongs to the cluster with the minimum distance, the distance method used is Euclidean. For this the vectors are created using the runif function of R. The values in the vector should be 1 and 2. In this vector, it predicts the cluster to be 4.</p>
-<p> The code for predicting the clusters for the new vector can be found <a href="https://sonalipednekar.georgetown.domains/ANLY501/Cluster_R.R" target="_blank">here</a> </p>
+<p> The code for predicting the clusters for the new vector can be found <a href="../Source_code_R/Cluster_R.R" target="_blank">here</a> </p>
 
 <h3><b>Summary</b></h3>
 <p>The dataset consists of just 8 columns and 198 rows. The label column is whether the person is rich or poor based on the various factors (other columns). The aim is to look for connections between different people based on their income.Clustering the dataset provided insights into that. The value of k = 2,4,8 was set for defining the number of clusters which was calculated using the Elbow method and Silhouette method. But from the K means clustering it can be seen that the clusters are overlapping and can be improved.</p>
